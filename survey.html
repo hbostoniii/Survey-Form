@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <title>Podcast Survey</title>
+</head>
+<body>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+
+<!-- Heading -->
+<div id="body">
+  <div id="heading">
+  <h1 id="title">Podcast Feedback Survey</h1>
+  <p id="description">Help us improve!</p>
+  </div>
+
+  <!-- Survey Form -->
+<div id="form">
+  <form id="survey-form">
+   <label id="name-label" for="name"> Name: </label>
+    <br> <input id="name" class="form-input" type="text" required placeholder="Enter your name">
+    
+     <br><br>
+    <label id="email-label" for="email">
+      Email: </label>
+    <br> 
+    <input id="email" class="form-input" type="email" required placeholder="Enter your Email">
+    
+    <!-- Number Input -->
+    <br><br>
+    <label id="number-label" for="number"> Age <span class="hint">(optional)</span></label>
+    <br>
+    <input id="number" class="form-input" type="number" placeholder="Enter your Age" min="17" max="90" >
+    
+    <!-- Dropdown menu -->
+    <br><br>
+    <label for="dropdown" id="dropdown-label">How did you hear about the podcast?</label><br>
+      <select name="dropdown" id="dropdown" class="form-input">
+        <option value="">Select your option</option>
+        <option value="word-of-mouth">Word of Mouth</option>
+        <option value="social-media">Social Media (Twitter/IG/YouTube)</option>
+        <option value="spotify-podcasts">Spotify Podcasts</option>
+        <option value="apple-podcasts">Apple Podcasts</option>
+      </select>
+      <br><br>
+
+    <!-- Radio Buttons -->
+    <div class="form-item">
+      <p>Gender</p>
+      <label><input type="radio" name="gender" class="input-radio" value="male">Male</label>
+      <label><input type="radio" name="gender" class="input-radio" value="female">Female</label>
+      <label><input type="radio" name="gender" class="input-radio" value="other">Other</label>
+      <br><br>
+    </div>
+    
+
+    <!-- Checkboxes -->
+    <div class="form-item">
+      <p> What topics would you like to see discussed? <span class="hint">(Check all that apply)</span></p>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="relationships">Relationships
+      </label>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="music">Music
+      </label>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="anime-manga">Anime/Manga
+      </label>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="movies/tv">Movies/TV
+      </label>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="politics">Politics
+      </label>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="current-events">Current Events
+      </label>
+      <label><input type="checkbox" name="topics" class="input-checkbox" value="other"><span class="checkbox-other">Other:<input class="form-input" type="text" name="topics" id="checkbox-option" placeholder="Enter your topic"></span>
+      </label>
+    <br><br>
+    </div>
+
+    <!-- Text Area -->
+   <p>Have any additional comments or suggestions?</p>
+    <textarea class="input-textarea" placeholder="Enter your comment here"></textarea>
+      <br><br>
+    <button id="submit" type="submit"> Submit</button>
+    <button type="reset"> Reset</button>
+  </form>
+</div>
+</div>
+</body>
+</html>

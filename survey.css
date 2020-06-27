@@ -1,0 +1,94 @@
+
+  @import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+  
+  *{
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+  }
+
+  h1, p, label {
+    color: seashell;
+  }
+  h1 {
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 1.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  #email-label, #name-label, #dropdown-label, #number-label {
+    font-size: 1.2rem;
+  }
+  
+
+  body {
+    margin: 0;
+    background-color: maroon;
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  
+  #heading {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-basis: content; */
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.75rem;
+  
+   
+    }
+
+  #description {
+    font-style: italic;
+    font-weight: 500;
+  }
+  #form {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  margin: 0.75rem;
+  padding: 2.5rem;
+  background-color: rgba(43, 39, 44, 0.6);
+}
+
+  .form-item {
+ display: flex;
+ flex-direction: column;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  line-height: 0.3rem;
+  padding: 0.3rem;
+  font-family: inherit;
+}
+
+.hint {
+  font-size: 0.9rem;
+}
+
+.input-radio,
+.input-checkbox {
+display: inline-block;
+margin-right: 0.5rem;
+min-height: 1rem;
+min-width: 1rem;
+}
+
+.input-textarea {
+  min-height: 5rem;
+  width: 100%;
+  resize: vertical;
+}
+
+.dropdown-other {
+  display: inline;
+}
